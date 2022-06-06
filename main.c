@@ -4,9 +4,7 @@ int main(){
     char nameTicket[10];
     int total = 0, sell=0, menu;
 
-    printf("================================\n");
-    printf("==  Program Tiket Management  ==\n");
-    printf("================================\n");
+    Header();
     
     //memasukan nama tiket
     printf("Masukan Nama Tiket : ");
@@ -25,9 +23,7 @@ int main(){
 
     menu:
     system("clear");
-    printf("================================\n");
-    printf("==  Program Tiket Management  ==\n");
-    printf("================================\n");
+    Header();
     printf("Menu:\n1. Cek Tiket\n2. Jual Tiket\n3. Validasi Tiket\n4. Keluar\n");
     printf("Masukan Pilihan Menu: ");
     scanf("%d", &menu);
@@ -137,4 +133,10 @@ void TicketValidation(struct Ticket *Data, int sold, char code){
     printf("\nTekan Enter Untuk Kembali Ke Menu Program!!");
    
     
+}
+
+void Header(){
+    printf("================================\n");
+    printf("==  Program Tiket Management  ==\n");
+    printf("================================\n");
 }
